@@ -41,6 +41,12 @@ io.on('connection', (socket) => {
       // time: new Date()
     });
   });
+
+  socket.on('disconnect', (reason) => {
+    // console.log(reason)
+    delete players[socket.id];
+    io.emit('newPlayer', players);
+  })
 });
 
 server.listen(port, () => {
