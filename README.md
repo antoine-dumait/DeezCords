@@ -1,4 +1,4 @@
-# nook
+# DeezCords
 
 Chat room disponible ici : https://deez-cords.fly.dev/
 
